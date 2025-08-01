@@ -5,7 +5,7 @@ const HomeHeroSection = () => {
   return (
     <section className=' w-ful h-screen hero-banner flex justify-center items-end relative'>
         <div className='flex flex-col justify-center items-center gap-10 mb-20'>
-            <h1 className='font-bold text-5xl'>
+            <h1 className='font-bold text-5xl text-white'>
                 BRITTANY HOLMES
             </h1>
 
