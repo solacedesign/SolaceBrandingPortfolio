@@ -7,29 +7,40 @@ const page = () => {
   return (
     <>
         <section className='max-w-7xl mx-auto py-40'>
-            <div className='flex flex-col gap-40 justify-center items-center'>
-                <Heading>How It Works</Heading>
+            <div className='flex flex-col gap-10 justify-center items-center'>
+                <div className='flex justify-center'>
+                <Heading className={""}>How It Works</Heading>
 
-                <div className='flex justify-between items-center w-full'>
-                    <div className='flex flex-col gap-10 justify-center items-center'>
-                        <img src="contact1.png" alt="" />
+                </div>
+
+                <div className='grid grid-cols-3 gap-20  items-center w-full'>
+                    <div className='flex flex-col gap-10 justify-center items-center aspect-square '>
+                        <img src="contact1.png" alt="" width={90}/>
                         <Paragraph className={'!font-bold text-2xl uppercase'}>Share Your Vision</Paragraph>
                     </div>
 
-                    <div className='flex flex-col gap-10 justify-center items-center'>
-                        <img src="contact2.png" alt="" />
+                    <div className='flex flex-col gap-10 justify-center items-center aspect-square '>
+                        <img src="contact2.png" alt="" width={90}/>
                         <Paragraph className={'!font-bold text-2xl uppercase'}>Build Together</Paragraph>
                     </div>
 
-                    <div className='flex flex-col gap-10 justify-center items-center'>
-                        <img src="contact3.png" alt="" />
+                    <div className='flex flex-col gap-10 justify-center items-center aspect-square '>
+                        <img src="contact3.png" alt="" width={100}/>
                         <Paragraph className={'!font-bold text-2xl uppercase'}>Bring To Life</Paragraph>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section className='max-w-7xl mx-auto py-40'>
+        <section className='max-w-5xl mx-auto py-10'>
+            <div className='flex flex-col items-center gap-10 mb-20'>
+                <Heading>
+                    Get in touch 
+                </Heading>
+                <Paragraph>
+                    Reach me by the contact form or email me at solacebrandingco@gmail.com
+                </Paragraph>
+            </div>
             <form className='flex flex-col gap-10'>
                 <div className='flex justify-center gap-10'>
                     <input type="text" placeholder='NAME'  
@@ -45,7 +56,7 @@ const page = () => {
 
                 <div>
                     <textarea type="text" placeholder='MESSAGE'  
-                    className='min-h-100 w-full border-2 border-primary-orange text-primary-orange
+                    className='min-h-50 w-full border-2 border-primary-orange text-primary-orange
                     rounded-xl px-10 font-bold py-10'/>
                 </div>
             </form>
